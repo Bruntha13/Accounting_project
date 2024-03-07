@@ -1,0 +1,43 @@
+<body>
+    <div class="container">
+        <div>    
+        </div>
+        <div class="form">
+            <h2 align="center">Ledger</h2>
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label>EntryId</label><br>
+                    <input type="number" class="form-control" id="entryid" [(ngModel)]="ledger.entryid" 
+                    name="entryid">
+                </div>
+                <div class="form-group">
+                    <label>CompanyId</label><br>
+                    <input type="number" class="form-control" id="companyid" [(ngModel)]="ledger.companyid" 
+                    name="companyid">
+                </div>
+                <div class="form-group">
+                    <label>Description</label><br>
+                    <input type="text" class="form-control" id="description" [(ngModel)]="ledger.description" 
+                    name="description">
+                </div>
+                <div class="form-group">
+                    <label>Debit</label><br>
+                    <input type="number" class="form-control" id="debit" [(ngModel)]="ledger.debit" 
+                    name="debit">
+                </div>
+                <div class="form-group">
+                    <label>Credit</label><br>
+                    <input type="number" class="form-control" id="credit" [(ngModel)]="ledger.credit" 
+                    name="credit">
+                </div>
+                <br/>
+                <button class="submit" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="buttons">
+            
+            <!-- <button class="update" (click)="updatePlan()">Update Plan</button><br>
+            <button class="go" (click)="goToPlanList()">Go to Plans List</button><br> --> 
+        </div>
+    </div>
+</body>
